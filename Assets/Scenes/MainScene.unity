@@ -520,6 +520,7 @@ GameObject:
   - component: {fileID: 1666176914}
   - component: {fileID: 1666176916}
   - component: {fileID: 1666176915}
+  - component: {fileID: 1666176917}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -7932,6 +7933,75 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!68 &1666176917
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666176913}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 3.9307404, y: -9.996893}
+  - {x: 4.251839, y: -9.243122}
+  - {x: 5.006476, y: -9.010981}
+  - {x: 5.0663795, y: -7.7948723}
+  - {x: 5.295687, y: -7.236671}
+  - {x: 5.996532, y: -7.0195417}
+  - {x: 6.035498, y: -5.6630855}
+  - {x: 6.3225784, y: -5.228087}
+  - {x: 6.933281, y: -5.0316906}
+  - {x: 7.33642, y: -4.201648}
+  - {x: 8.012592, y: -4.0083923}
+  - {x: 8.059103, y: -2.7810838}
+  - {x: 8.304023, y: -2.2945535}
+  - {x: 8.976721, y: -2.014287}
+  - {x: 9.086086, y: -0.58678144}
+  - {x: 9.407481, y: -0.1631159}
+  - {x: 10.037528, y: -0.035193264}
+  - {x: 10.1789, y: 0.60514903}
+  - {x: 10.660919, y: 0.9252227}
+  - {x: 12.989723, y: 0.94935125}
+  - {x: 13.193604, y: 1.6150377}
+  - {x: 13.627121, y: 1.9470391}
+  - {x: 15.033679, y: 1.9546409}
+  - {x: 15.1414385, y: 2.516707}
+  - {x: 15.56826, y: 2.8933806}
+  - {x: 16.244978, y: 2.95751}
+  - {x: 16.896383, y: 2.900468}
+  - {x: 18.03772, y: 3.034953}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1921006766
 GameObject:
   m_ObjectHideFlags: 0
@@ -8170,11 +8240,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7248938695918143538, guid: 7bf6cbeee814fe80c83d423ce4d80dcb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.94
+      value: 6.54
       objectReference: {fileID: 0}
     - target: {fileID: 7248938695918143538, guid: 7bf6cbeee814fe80c83d423ce4d80dcb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.08
+      value: 2.37
       objectReference: {fileID: 0}
     - target: {fileID: 7248938695918143538, guid: 7bf6cbeee814fe80c83d423ce4d80dcb, type: 3}
       propertyPath: m_LocalPosition.z
