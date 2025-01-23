@@ -5,22 +5,33 @@ public class PlayerController : MonoBehaviour
 {
     public InputAction MoveAction;
     Rigidbody2D rigidbody2d;
+    public int maxHealth = 5;
+    int currentHealth;
     Vector2 move;
 
-    void Start()
-    {
+    void Start() {
+
         MoveAction.Enable();
         rigidbody2d = GetComponent<Rigidbody2D>();
+
+        currentHealth = maxHealth;
     }
 
-    void Update()
-    {
+    void Update() {
+
         move = MoveAction.ReadValue<Vector2>();
     }
     
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
+
         Vector2 position = (Vector2)rigidbody2d.position + move * 3.0f * Time.deltaTime;
         rigidbody2d.MovePosition(position);
+    }
+
+    void ChangeHealth (int amount) {
+
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
+
     }
 }
